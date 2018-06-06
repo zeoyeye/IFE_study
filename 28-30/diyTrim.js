@@ -1,4 +1,4 @@
-﻿function diyTrim(str) {
+﻿function diyTrim(str) {		//去除字符串首尾的空格
 	for(var i=0;i<str.length;i++){
 		if(str[i]!=" "&&str[i]!="　")
 			break;
