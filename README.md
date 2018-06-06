@@ -1,4 +1,4 @@
 # IFE_study
-exercises of IFE
+tasks of IFE
 
-[百度前端技术学院](http://ife.baidu.com/college/detail/id/5)
+IFE : [Baidu insititute of Front End Technology](http://ife.baidu.com/college/detail/id/5)
