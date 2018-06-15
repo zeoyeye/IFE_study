@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>IFE ECMAscript</title>
+	</head>
+<body>
+	<canvas id="drawing" width="700" height="200"></canvas>
+		<script src="line.js"></script> 
+	<script>
+		var drawing = document.getElementById("drawing");
+		var data= [220, 200, 240, 250, 260, 270, 280, 295, 310, 335, 355, 380];
+		window.onload=function(){
+			drawLines(data,380,70,180,600,150);		//传入数据数组、最大的数据值、坐标轴原点的横纵坐标\轴的宽度和高度
+		}
+/*
+function drawLines(data,max,x0,y0,axisWidth,axisHeight){
+	if(drawing.getContext){
+		var context = drawing.getContext("2d");
+
+		context.beginPath();
+
+		context.moveTo(x0,y0);				//绘制横纵轴
+		context.lineTo(x0+axisWidth,y0);	
+		context.moveTo(x0,y0);
+		context.lineTo(x0,y0-axisHeight);
+
+		context.strokeStyle = "black";
+		context.lineWidth = 2;
+		context.stroke();
+		context.closePath();
+
+		var x = Array(12), y = Array(12);		//存放数据点的坐标
+		dotSpace = axisWidth/13;
+		x[0] = x0+dotSpace/2,y[0] = y0-data[0]/max*axisHeight;
+
+		context.beginPath();
+		context.moveTo(x[0],y[0]);
+		context.arc(x[0],y[0],5,0,2*Math.PI,false);
+		for(var i=1;i<12;i++){
+			x[i] = x[i-1]+dotSpace;
+			y[i] = y0-data[i]/max*axisHeight;
+			context.lineTo(x[i],y[i]);				
+			context.arc(x[i],y[i],5,0,2*Math.PI,false);
+		}
+
+		context.strokeStyle = "blue";
+		context.lineWidth = 2;
+		context.stroke();
+		context.closePath();
+
+		//context.fillStyle = "#0000ff";
+	}
+}*/
+	</script>  
+
+</body>
+</html>
