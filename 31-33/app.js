@@ -13,5 +13,5 @@ window.onload = function(){
 		productCheckbox[i].checked = "checked";
 	}
 		div1.innerHTML = getNewTable1(sourceData);	
-		combineTD()；
+		combineTD();
 }
